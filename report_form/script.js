@@ -52,7 +52,7 @@ document.getElementById("reportForm").addEventListener("submit", async function(
     // تغيير النص أثناء الإرسال
     submitBtn.innerText = "📤 جاري إرسال البلاغ...";
 
-    const response = await fetch("https://script.google.com/macros/s/AKfycbxKuASoaZPLGVGMbi83B9ywmiBeOC0UYubGQHrOZWv27rytdiDHXQRf1phlKDi71-G9/exec", {
+    const response = await fetch("https://script.google.com/macros/s/AKfycbzApOQ-dCNGAdqE_ROAb0KkmS0RSR3zGZrUajKMBeQ5AJGNRGS0hflEcIHhPMcvxQdN/exec", {
       method: "POST",
       body: formData
     });
@@ -70,3 +70,4 @@ document.getElementById("reportForm").addEventListener("submit", async function(
   submitBtn.disabled = false;
   submitBtn.innerText = "إرسال البلاغ";
 });
+
